@@ -1,0 +1,413 @@
+feature,importance
+cat__drivetrain_All-wheel Drive,0.31134795917911534
+cat__brand_Porsche,0.2025663175841755
+num__model_year,0.09797475106214165
+num__mileage_mi,0.07826715831257233
+cat__brand_Mercedes-Benz,0.04310414596010499
+cat__brand_GMC,0.021672836838142123
+cat__model_Model S Plaid,0.020252028020943332
+cat__model_Model X Plaid,0.01742834326513189
+cat__drivetrain_Four-wheel Drive,0.01672634747632653
+cat__model_HUMMER EV Edition 1,0.01613708245084216
+cat__brand_Tesla,0.01488122676957863
+cat__model_Taycan 4S,0.0142481096384781
+cat__drivetrain_Front-wheel Drive,0.01041766439900442
+cat__brand_BMW,0.00945959605297205
+cat__model_Model 3 Long Range,0.008643776061739506
+cat__model_F-150 Lightning LARIAT,0.008388434454673466
+cat__model_F-150 Lightning Platinum,0.008112260231661962
+cat__model_Model X Base,0.008084874966808733
+cat__model_RS e-tron GT Base,0.007668224509458843
+cat__model_EQS 580 Base 4MATIC,0.006377596576222254
+cat__transmission_2-Speed Automatic,0.005856213966638992
+cat__model_Model X Long Range,0.005694520820946303
+cat__model_Taycan Cross Turismo 4,0.0037773895657762374
+cat__model_Model X Performance,0.00298446236478018
+cat__model_EQB 300 Base 4MATIC,0.002877964880532303
+cat__model_EQB 350 Base 4MATIC,0.0024536653942625096
+cat__model_Model S Base,0.0024159633773506253
+cat__model_Mustang Mach-E Select,0.002312530834983617
+cat__model_Model X,0.002235837161424006
+cat__brand_Ford,0.002017366535923687
+cat__model_Model S Plaid Tri Motor All-Wheel Drive,0.0017514505807761642
+cat__model_Model X Long Range Plus,0.0016854151402856431
+cat__model_Model S Long Range,0.0016541558013619755
+cat__brand_Nissan,0.0016301904549700012
+cat__model_Model S Performance,0.001526920927669521
+cat__model_i7 xDrive60,0.0015052059523821366
+cat__model_Model X Dual Motor All-Wheel Drive,0.0014880650119789788
+cat__model_Taycan Cross Turismo Turbo S,0.0014254741097862007
+cat__model_AMG EQS Base,0.0014214310836017353
+cat__drivetrain_AWD,0.0013390555586261772
+cat__brand_Audi,0.0012968770121934159
+cat__brand_Cadillac,0.0012675690291463486
+cat__model_Model X P100D,0.0012190209559596458
+cat__model_Model 3 Performance,0.0010860414739843323
+cat__transmission_1-Speed Automatic,0.001022138909738604
+num__accidents_or_damage,0.000938226643250674
+cat__model_Model X 100D,0.0009184594611075464
+cat__model_EQS 450 Base 4MATIC,0.0008870604047933952
+cat__model_Taycan Turbo S,0.0008167072950611587
+cat__model_Mustang Mach-E GT,0.0008113649214243931
+num__personal_use_only,0.0007333332017385381
+num__one_owner,0.0007226726431230441
+cat__brand_Volkswagen,0.0007121985888787539
+cat__model_Taycan Turbo,0.0006403667303307996
+cat__brand_Toyota,0.0006291161895771083
+cat__model_Model S 75D,0.0006119389889227685
+cat__model_Mustang Mach-E Premium,0.0006101841124784105
+cat__model_e-tron S Prestige,0.000591657514554455
+cat__transmission_Automatic,0.0005661358123826476
+cat__model_i4 Gran Coupe M50,0.0005588778851040347
+cat__model_Taycan Cross Turismo Turbo,0.0005398416295793637
+cat__model_Model S P100D,0.0005110132721936918
+cat__model_iX xDrive50,0.00042940721760838176
+cat__brand_Chevrolet,0.0004034922887138461
+cat__brand_Kia,0.000402616346503213
+cat__model_Taycan GTS,0.00038880282971801185
+cat__model_Model X Plaid Tri Motor All-Wheel Drive,0.0003876702399230435
+cat__model_Model Y Long Range,0.0003858877365212977
+cat__model_Taycan Cross Turismo 4S,0.00038446025571119244
+cat__model_Model X Performance Dual Motor All-Wheel Drive,0.00035809558320632303
+cat__model_EQB 250 Base,0.0003512454859171943
+cat__model_Model Y Performance,0.00034977491670683584
+cat__model_Model S 70D,0.0003433606802213435
+cat__model_Mirai XLE,0.0003425017450833087
+cat__model_EQE 350 Base 4MATIC,0.0002640042980372029
+cat__model_EV6 Wind,0.0002518793721041351
+cat__model_EQS 580 4MATIC,0.00024272364303544287
+cat__model_Model S 90D,0.00023824399560992194
+cat__model_Leaf S,0.00023703946988954763
+cat__model_F-150 Lightning XLT,0.00023587850769279023
+cat__model_Kona EV Ultimate,0.00020619232315211228
+cat__model_ARIYA ENGAGE,0.00020569503809829282
+cat__drivetrain_Rear-wheel Drive,0.00018765069455907012
+cat__model_Leaf SL PLUS,0.00018436854738878566
+cat__model_Taycan 4,0.0001807252856409377
+cat__model_Leaf SV PLUS,0.00016990548551480453
+cat__transmission_A/T,0.0001688915037837483
+cat__model_Model Y Standard Range,0.00016037324872000271
+cat__model_Model X P90D,0.00015704592462887165
+cat__model_iX M60,0.00014835871336385265
+cat__brand_Volvo,0.00013104005166245377
+cat__model_LYRIQ Luxury,0.00012839511294014585
+cat__model_Leaf SV,0.00012557341647747653
+cat__model_Model S 85D,0.0001234511027346939
+cat__model_Bolt EV Premier,0.00012100765746441332
+cat__model_Model X 75D,0.00011100181837771624
+cat__brand_Jaguar,0.0001104136639450527
+cat__model_F-150 Lightning,0.00010356366139778376
+cat__model_F-150 Lightning Pro,0.00010240087931310429
+cat__model_Mustang Mach-E California Route 1,0.00010238840439839846
+cat__model_e-tron S Premium Plus,9.872438053587974e-05
+cat__drivetrain_Unknown,9.797212670031085e-05
+cat__transmission_1-Speed A/T,9.622700243856026e-05
+cat__model_Niro EV EX Premium,9.571768714547457e-05
+cat__model_EQE 350 Base,9.56400612353544e-05
+cat__model_NEXO Limited,9.397721791197599e-05
+cat__brand_Hyundai,9.226707681226112e-05
+cat__model_ELR Base,8.732432721817314e-05
+cat__model_EV6 GT-Line,8.729204142284537e-05
+cat__model_Model X Standard Range,8.432620492599202e-05
+cat__model_Model 3,8.047006574483713e-05
+cat__model_Model X 90D,7.867352535880095e-05
+cat__model_Mustang Mach-E SELECT,7.647445268182317e-05
+cat__model_Kona EV Limited,7.446766550629904e-05
+cat__model_Model S P85D,7.43724679773718e-05
+cat__model_e-tron S line Premium,7.397184121453079e-05
+cat__model_i4 Gran Coupe eDrive40,7.000257680860188e-05
+cat__model_EQS 580,6.771862480847674e-05
+cat__model_Model Y Long Range Dual Motor All-Wheel Drive,6.399093654946198e-05
+cat__model_Model Y Performance Dual Motor All-Wheel Drive,5.9038780790340585e-05
+cat__model_Bolt EV LT,5.7224811662474536e-05
+cat__model_ARIYA VENTURE+,5.662142380680718e-05
+cat__model_Niro EV Wave,5.56621167374633e-05
+cat__model_Model S,5.476372330405298e-05
+cat__model_IONIQ 5 SE,5.217564417523029e-05
+cat__model_Model S Long Range Plus,5.0636330271715434e-05
+cat__model_Model S P90D,5.052275877041802e-05
+cat__model_EQS 450+ EQS 450+,5.0117839791970855e-05
+cat__model_ID.4 Pro,4.9456706418083455e-05
+cat__model_Taycan Base,4.7031948434600744e-05
+cat__model_ARIYA PREMIERE,4.694520321023152e-05
+cat__drivetrain_FWD,4.5944213671033204e-05
+cat__model_Bolt EUV Premier,4.319666520359231e-05
+cat__model_EQS 580 EQS 580,4.1951680067491144e-05
+cat__model_Model S 60D,4.160281716610986e-05
+cat__model_Model S 75,4.112513523776063e-05
+cat__model_e-Golf SE,3.99229714370923e-05
+cat__model_Focus Electric Base,3.6432696961882826e-05
+cat__model_Mirai Base,3.626397938118775e-05
+cat__model_EV6 GT,3.5715632207872654e-05
+cat__model_Model X Long Range Dual Motor All-Wheel Drive,3.5212288056581376e-05
+cat__model_Model 3 Standard Range Plus,3.413569949902561e-05
+cat__model_i3 120Ah s w/Range Extender,3.356773931851338e-05
+cat__transmission_Unknown,3.31376504611676e-05
+cat__model_EQS 450+ Base,3.200819755367483e-05
+cat__brand_Mitsubishi,3.029794617606004e-05
+cat__model_Model S 100D,2.9801514953302037e-05
+cat__model_IONIQ 5 Limited,2.7415322151137646e-05
+cat__model_e-tron Premium,2.673516637738952e-05
+cat__model_E-Transit Base,2.6191794022199164e-05
+cat__model_Bolt EV 1LT,2.5481611955471705e-05
+cat__model_Volt Base,2.487220274211681e-05
+cat__model_Leaf S PLUS,2.4257879024372275e-05
+cat__model_EQS 450+,2.1798348521310875e-05
+cat__model_Spark EV 2LT,1.9584627648073662e-05
+cat__model_Model S Dual Motor All-Wheel Drive,1.950213877931782e-05
+cat__transmission_2-Speed A/T,1.827250174779317e-05
+cat__model_Niro EV EX,1.8197817222760975e-05
+cat__model_IONIQ 5 SEL,1.7851574765910392e-05
+cat__model_Leaf SL PLUS 62 kWh,1.7151964040144147e-05
+cat__model_EQS 450 4MATIC,1.675072263109857e-05
+cat__model_i3 Base w/Range Extender,1.57876901950846e-05
+cat__model_Leaf SL,1.5477338383725643e-05
+cat__model_I-PACE HSE EV400 AWD Automatic,1.432562123118695e-05
+cat__model_bZ4X Limited,1.3998114934910107e-05
+cat__model_ID.4 Pro S,1.3497000330229763e-05
+cat__model_Bolt EUV LT,1.3403779553907248e-05
+cat__model_Model X Long Range Plus Dual Motor All-Wheel Drive,1.285835780578157e-05
+cat__model_e-tron Prestige,1.2829942219603592e-05
+cat__model_e-Golf SEL Premium,1.248897015077653e-05
+cat__brand_Subaru,1.2472509790850456e-05
+cat__model_Leaf S 40 kWh,1.2103243629591984e-05
+cat__model_Kona EV SEL,1.1936269933562594e-05
+cat__model_Mustang Mach-E PREMIUM,1.0404866662913338e-05
+cat__transmission_Automatic CVT,9.628853559413513e-06
+cat__model_e-tron Premium Plus,9.516456987726808e-06
+cat__model_Spark EV 1LT,9.496104942297618e-06
+cat__model_Q4 e-tron 40 Premium Plus,9.34098037679902e-06
+cat__model_i3 94Ah s w/Range Extender,9.162554200888253e-06
+cat__model_i3 120Ah,8.386093289238509e-06
+cat__model_IONIQ EV Electric,8.06591693388751e-06
+cat__model_i3 120Ah w/Range Extender,7.96161104513167e-06
+cat__model_bZ4X XLE,7.679690453486344e-06
+cat__model_IONIQ EV SE,7.097615512353025e-06
+cat__model_i3 94 Ah,6.992908398432418e-06
+cat__model_Model 3 Mid Range,6.862366915291612e-06
+cat__model_e-tron Chronos,6.8393042139415794e-06
+cat__drivetrain_RWD,6.83249996049837e-06
+cat__model_ID.4 1st Edition,6.343520033107721e-06
+cat__model_Model 3 Standard Range,6.337812419301317e-06
+cat__model_Model S Signature Performance,6.290025742467325e-06
+cat__model_EV6 Light,5.991804488683469e-06
+cat__transmission_Automatic 1-Speed,5.840828666178363e-06
+cat__model_e-tron Sportback S line Prestige,5.72872575371421e-06
+cat__model_Model 3 Base,5.494936473674854e-06
+cat__model_Model X 60D,5.146722503351546e-06
+cat__transmission_SINGLE SPEED REDUCTION GEAR,5.024310607578862e-06
+cat__model_Q4 e-tron 50 Premium Plus,4.775978378905345e-06
+cat__model_i3 94 Ah w/Range Extender,4.754308169622398e-06
+cat__model_i-MiEV ES,4.685191415963017e-06
+cat__model_IONIQ EV Limited,4.0559377951486335e-06
+cat__model_XC40 Recharge Pure Electric Twin Ultimate,3.7181050762435874e-06
+cat__model_F-150 Lightning ELECTRIC/ LARIAT/ MAX TOW/ LEATHER/ 360 CAMERA/ B&,3.6751085391261176e-06
+cat__model_Niro EV Wind,3.5805962101854986e-06
+cat__model_Bolt EUV FWD Premier,3.473165967548918e-06
+cat__model_Leaf SV 40 kWh,3.3257727530864987e-06
+cat__model_Transit-350 Base,3.202983211403478e-06
+cat__model_RAV4 EV Base,3.0742799264460634e-06
+cat__model_Mustang Mach-E CALIFORNIA ROUTE 1,3.028248109330691e-06
+cat__model_Model S 70,3.022596471329458e-06
+cat__model_Kona EV SE,2.943052749651239e-06
+cat__model_NEXO Blue,2.9016904454357553e-06
+cat__model_Leaf SV PLUS 62 kWh,2.777714003136054e-06
+cat__model_i3 Base,2.760028105242552e-06
+cat__model_Q4 e-tron 50 Premium,2.6868090652227167e-06
+cat__transmission_Single-Speed Automatic,2.432874303018038e-06
+cat__model_Model S PERFORMANCE W/LUDICROUS,2.33596698391078e-06
+cat__model_Soul EV +,2.07069509325061e-06
+cat__model_MX-30 Premium Plus,2.0706858540043216e-06
+cat__model_i3 120Ah s,2.034897911124889e-06
+cat__model_B-Class B 250e,2.0133229633803574e-06
+cat__model_Model S 60,1.993155843334518e-06
+cat__model_Mirai Limited,1.991643355063281e-06
+cat__model_C40 Recharge Pure Electric Twin Ultimate,1.921777993940121e-06
+cat__brand_Mazda,1.897290387175304e-06
+cat__model_Soul EV Base,1.796768614745955e-06
+cat__model_XC40 Recharge Pure Electric Twin Plus,1.7109169287119657e-06
+cat__model_Model Y Standard Range Rear-Wheel Drive,1.6039539832663777e-06
+cat__transmission_SINGLE-SPEED TRANSMISSION,1.478946949800352e-06
+cat__model_Model 3 Standard,1.4560410514066422e-06
+cat__model_e-tron Sportback Premium Plus,1.4176773772658896e-06
+cat__model_Bolt EV,1.3867726001151305e-06
+cat__model_Transit-150 Base,1.3680872095743544e-06
+cat__model_e-tron quattro Premium Plus,1.3626881292768607e-06
+cat__model_Bolt EV 2LT,1.3363328045245982e-06
+cat__model_Bolt EV FWD 1LT,1.3210753170776938e-06
+cat__model_XC40 Recharge Pure Electric P8,1.3152225593221231e-06
+cat__model_Model X 100D AWD,1.299566095805264e-06
+cat__model_Model S P85,1.2223182846730456e-06
+cat__model_Model S 85,9.68989845496361e-07
+cat__model_Model S Standard Range,9.452149201826273e-07
+cat__model_e-Golf Limited Edition,9.275153146662995e-07
+cat__model_XC40 Recharge Pure Electric Ultimate,8.97805787976901e-07
+cat__model_B-Class Electric Drive Base,8.552812973779119e-07
+cat__model_Bolt EV FWD LT,8.348896012825009e-07
+cat__model_Taycan,7.835551466528477e-07
+cat__model_ID.4 AWD Pro S,6.617168522005876e-07
+cat__model_Solterra Touring,6.591733834315191e-07
+cat__model_C40 Recharge Pure Electric P8 Ultimate,6.300998407824321e-07
+cat__model_Model 3 Mid Range Battery,6.114660556245512e-07
+cat__model_Model X 70D,6.013862431331722e-07
+cat__model_Soul EV PLUS,5.987120950996537e-07
+cat__model_Solterra Premium,5.388463714593805e-07
+cat__model_i3 94Ah s,5.381001690200269e-07
+cat__model_Model 3 PLUS,5.040438080899112e-07
+cat__transmission_Inductive Technology System,3.9804717107886147e-07
+cat__transmission_Single Speed Reducer,3.76296348835205e-07
+cat__model_I-PACE HSE,3.742160957430684e-07
+cat__model_Soul EV EV+,3.625477258261709e-07
+cat__model_Niro EV S,3.5256177058296555e-07
+cat__model_Soul EV,3.4514055360706e-07
+cat__model_Solterra Limited,2.903152103172869e-07
+cat__transmission_CVT,2.867601956321676e-07
+cat__transmission_SINGLE SPEED REDUCER,2.4055259767676817e-07
+cat__model_Leaf S PLUS 62 kWh,2.2598407206801385e-07
+cat__model_XC40 Recharge Pure Electric P8 Twin Plus,2.2552910845832977e-07
+cat__model_i-MiEV SE,2.1423218509807047e-07
+cat__model_Bolt EV FWD Premier,1.7970813702686572e-07
+cat__model_C40 Recharge Pure Electric Twin Plus,1.729933723457403e-07
+cat__model_I-PACE First Edition,1.3266500013998464e-07
+cat__model_C40 Recharge Pure Electric Ultimate,1.030136267099482e-07
+cat__model_Niro EX Premium,9.437270464218404e-08
+cat__model_i3,8.71953544249263e-08
+cat__transmission_Single-Speed Fixed Gear,7.837485388530103e-08
+cat__model_Bolt EUV,6.660533423582918e-08
+cat__model_Model S 60 kWh Battery,5.0538546876363734e-08
+cat__model_Soul EV EV-E,4.410018954991131e-08
+cat__model_i3 DEKA WORLD,4.0924141308966377e-08
+cat__model_Model S Signature,3.6292637305102895e-08
+cat__model_XC40 Recharge Pure Electric P8 Twin Ultimate,3.5894739705052276e-08
+cat__model_Focus SE,3.525031861530439e-08
+cat__model_XC40 Recharge Pure Electric Plus,3.5165357243479874e-08
+cat__model_Taycan Base (A2),2.3179123215662594e-08
+cat__model_Model 3 BASE,2.2947154629495835e-08
+cat__transmission_1-SPEED A/T,1.873341780832989e-08
+cat__transmission_automatic,1.2283925184474628e-08
+"cat__model_Soul EV Base (CA, OR, WA, NY, NJ, MA, MD, CT, GA, TX)",1.2236364762626647e-08
+cat__transmission_SINGLE SPEED,6.780668572869189e-09
+"cat__transmission_Automatic, 1-Spd",4.947187461250795e-09
+cat__model_Model X 90D/HIGHWAY AUTOPILOT/6 SEATER/SUBZERO WEATHER PKG,0.0
+cat__model_Model X 75D/FULL SELF DRIVING CAPABILITY PAID 15 000 VALUE,0.0
+cat__model_Model X D75,0.0
+cat__model_F-150 Lightning LARIATAWD,0.0
+cat__model_F-150 Lightning Platinum 4WD,0.0
+cat__model_Model Y Performance AWD,0.0
+cat__model_Focus Electric BASE,0.0
+cat__model_F-150 Lightning BATTERY,0.0
+cat__model_Model X WARRANTY,0.0
+cat__model_Model Y,0.0
+cat__model_Model X 90D/BASE AUTOPILOT/AP2 HARDWARE CAN BE UPGRADED TO,0.0
+cat__transmission_Continuously Variable,0.0
+cat__transmission_Other,0.0
+cat__transmission_OTHER,0.0
+cat__model_Model X PLAID-FSD,0.0
+cat__model_Model X LONG RANG,0.0
+cat__model_Model X FULL SELF DRIVING,0.0
+cat__model_AMG EQS 4MATIC,0.0
+cat__transmission_SINGLE SPEED FIXED GEAR,0.0
+cat__transmission_Manual,0.0
+cat__transmission_1-SPEED AUTOMATIC TRANSMISS,0.0
+cat__drivetrain_Front-Wheel Drive,0.0
+cat__transmission_Single-Speed Fixed G,0.0
+cat__drivetrain_Front-Wheel Drive with Limited-Slip Differential,0.0
+cat__transmission_BOTE VITESSES  UN RAPPORT,0.0
+cat__transmission_1-SPEED G,0.0
+cat__model_F-150 Lariat,0.0
+cat__model_I-PACE SE,0.0
+cat__model_I-PACE S EV400 AWD Automatic,0.0
+cat__model_I-PACE S,0.0
+cat__model_Model X DUAL MOTOR ONE OWNER CAM D100,0.0
+cat__model_Roadster 2.5 Sport,0.0
+cat__model_EQS 450+ 450,0.0
+cat__model_Model S PERFORMANCE W/LUDICROUS MODE,0.0
+cat__model_E-Transit,0.0
+cat__model_Model S PLAID/AWD/TRI MOTOR/ 1020HP/FULL SELF DRIVING CAPA,0.0
+cat__model_Model S PERFORMANCE/AWD/AUTOPILOT/FRONT&REAR HEATED SEATS/,0.0
+cat__model_Model S PERFORMANCE W/LUDICROUS MODE L,0.0
+cat__model_Model S Performance Dual Motor All-Wheel Drive,0.0
+cat__model_Model X 7 SEAT,0.0
+cat__model_EQB 250 250 4D Sport Utility,0.0
+cat__model_Model S P85+,0.0
+cat__model_Model S P90DL,0.0
+cat__model_Soul EV EV,0.0
+cat__model_Soul EV EVe,0.0
+cat__model_RS e-tron GT quattro,0.0
+cat__model_Roadster,0.0
+cat__model_RAV4 EV FWD 4dr,0.0
+cat__model_Q4 e-tron Prestige 50 quattro,0.0
+cat__model_EQS 450+ 450+ Sedan,0.0
+cat__model_EQS 450+ EQS 450+ Exclusive Sedan 4D,0.0
+cat__model_EQE 350 Base 4MATIC+,0.0
+cat__model_IONIQ 5 SE Standard Range,0.0
+cat__model_Q4 e-tron 50 Prestige,0.0
+cat__model_ProMaster 3500 Window Van High Roof,0.0
+cat__model_Niro EX,0.0
+cat__model_EV6,0.0
+cat__model_EQE 350 EQE 350,0.0
+cat__model_ID.4 S,0.0
+cat__model_Model S LUDACRIS PERFORMANCE,0.0
+cat__model_Model S Base w/Extended Range,0.0
+cat__model_Model S BASE,0.0
+cat__model_Model S 90D AWD,0.0
+cat__model_Model S 85D/P85D/70D/90D/P90D,0.0
+cat__model_Model S 100D AWD,0.0
+cat__model_XC40 Recharge Pure Electric,0.0
+cat__model_XC40 4DR EAWD P8 RECHA,0.0
+cat__model_Taycan ASSIST~BLACKOUT PACKAGE! 1 OWNER! LOTS OF OPTIONS!,0.0
+cat__model_Volt,0.0
+cat__model_Taycan Sedan,0.0
+cat__model_Taycan RWD,0.0
+cat__model_Spark EV LT,0.0
+cat__model_Model X 7 SEATER 22 WHEELS SAVE THOUSANDS,0.0
+cat__model_EQB 300 4MATIC,0.0
+cat__model_EQE 350 4MATIC,0.0
+cat__model_e-tron Sportback Prestige,0.0
+cat__model_e-tron Sportback Premium,0.0
+cat__model_e-tron Premiumwe,0.0
+cat__model_e-Golf SEL,0.0
+cat__model_bZ4X,0.0
+cat__model_Model S Model S Dual Motor,0.0
+cat__model_i3 60 Ah,0.0
+cat__model_e-tron Sportback S line Premium,0.0
+cat__model_Leaf,0.0
+cat__model_LYRIQ,0.0
+cat__model_Kona EV,0.0
+cat__model_XC40 Recharge Pure Electric P8 Twin,0.0
+cat__model_XC40 Recharge Pure Electric P8 Ultimate,0.0
+cat__model_XC40 Recharge Pure Electric P8 Plus,0.0
+cat__model_Model S Long Range Dual Motor All-Wheel Drive,0.0
+cat__model_Model S Long Range Plus Dual Motor All-Wheel Drive,0.0
+cat__model_Model 3 RANGE BATTERY,0.0
+cat__model_Model 3 RANGE,0.0
+cat__model_Model 3 Long Range AWD,0.0
+cat__model_Model 3 Long Range Battery,0.0
+cat__model_Model 3 LONG RANGE/PERFORMANCE,0.0
+cat__transmission_1-Speed,0.0
+cat__model_Model 3 CLEAN CARFAX ONE OWNER WAD!,0.0
+cat__model_MX-30 Premium Plus Package,0.0
+cat__transmission_1-Speed Manual,0.0
+cat__transmission_A,0.0
+cat__transmission_Auto,0.0
+cat__transmission_AUTOMATIC,0.0
+cat__model_Model S 75D-ALL WHEEL DRIVE 1 OWNER AUTOPILOT CONVENIENCE,0.0
+cat__model_Model S 75D/100D/P100D,0.0
+cat__transmission_1-Speed Direct-Drive Automatic,0.0
+cat__model_Mirai,0.0
+cat__model_Model 3 FULL PILOT,0.0
+cat__model_Model 3 DUAL MOTOR,0.0
+cat__model_Model 3 LONG RANGE BATTER,0.0
+cat__model_Model 3 LONG RANGE-AUTOPILOT SYSTEM,0.0
+cat__model_i3 Mega World,0.0
+cat__model_i3 W MOONROOF AND HK SOUND SYSTEM,0.0
+cat__model_Model 3 LONG RANGE-NAVI-REAR PARKING AID,0.0
+cat__model_Model 3 LONG RANGE/AWD/AUTO PILOT/ACCELERATION BOOST/FRONT,0.0
+cat__model_i4 Gran Coupe,0.0
+cat__model_i3 i3s with Range Extender,0.0
+cat__transmission_1 speed automatic,0.0
+cat__transmission_-10,0.0
+cat__model_ARIYA EVOLVE+,0.0
+cat__transmission_SINGLE SPEED TRANSMISSION,0.0
+cat__brand_RAM,0.0
+cat__transmission_Single Reduction Gear,0.0

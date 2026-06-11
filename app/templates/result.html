@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container result-card">
+
+    <h1>예상 중고 전기차 가격</h1>
+
+    <h2 class="price">
+        $ <span id="priceValue" data-price="{{ prediction }}">0</span>
+    </h2>
+
+    <p class="notice">
+        본 가격은 실제 거래 가격이 아니라 AI 예측 기반 참고용 가격입니다.
+    </p>
+
+    <div class="result-info">
+        <p><strong>브랜드:</strong> {{ brand }}</p>
+        <p><strong>모델:</strong> {{ car_model }}</p>
+        <p><strong>연식:</strong> {{ model_year }}</p>
+        <p><strong>주행거리:</strong> {{ "{:,.0f}".format(mileage_km) }} km</p>
+    </div>
+
+    <div class="importance-card">
+        <h3>가격 영향 요인</h3>
+
+        {% for item in importance_items %}
+        <div class="importance-row">
+            <div class="importance-label">
+                <span>{{ item.label }}</span>
+                <span>{{ item.percent }}%</span>
+            </div>
+
+            <progress class="importance-progress"
+                      value="{{ item.percent }}"
+                      max="100">
+            </progress>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="result-info">
+        <p>AI Model: Random Forest Regressor</p>
+        <p>Dataset: 16,403 used electric vehicles</p>
+        <p>R² = 0.9579</p>
+        <p>MAE = 약 3,306 USD</p>
+    </div>
+
+    <div class="feedback-box">
+        <p>예측 결과가 도움이 되었나요?</p>
+
+        <button type="button" onclick="showFeedback()">
+            도움됨
+        </button>
+
+        <button type="button" onclick="showFeedback()">
+            수정 필요
+        </button>
+
+        <p id="feedbackMessage"></p>
+    </div>
+
+    <a class="back-btn" href="/">
+        다시 예측하기
+    </a>
+
+</div>
+
+<script>
+    function showFeedback() {
+        const message = document.getElementById("feedbackMessage");
+        message.innerText = "피드백 감사합니다. 향후 모델 개선에 활용할 수 있습니다.";
+    }
+</script>
+<script>
+    function animatePrice() {
+        const priceElement = document.getElementById("priceValue");
+        const targetPrice = parseFloat(priceElement.dataset.price);
+        let currentPrice = 0;
+        const duration = 1200;
+        const frameRate = 30;
+        const totalFrames = duration / frameRate;
+        const increment = targetPrice / totalFrames;
+
+        const counter = setInterval(() => {
+            currentPrice += increment;
+
+            if (currentPrice >= targetPrice) {
+                currentPrice = targetPrice;
+                clearInterval(counter);
+            }
+
+            priceElement.innerText = currentPrice.toLocaleString("en-US", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+        }, frameRate);
+    }
+
+    window.onload = animatePrice;
+</script>
+</body>
+</html>

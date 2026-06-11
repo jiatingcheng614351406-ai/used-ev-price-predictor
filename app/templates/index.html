@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>중고 전기차 가격 예측 시스템</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>⚡ 중고 전기차 가격 예측 시스템</h1>
+
+    <p class="subtitle">
+        AI 기반 중고 전기차 시장 가격 예측 시스템
+    </p>
+
+    <form id="predictForm" action="/predict" method="post">
+        <div class="form-grid">
+            <div class="form-group">
+                <label>브랜드</label>
+                <select name="brand" id="brandSelect">
+                    <option value="Tesla">Tesla</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Rivian">Rivian</option>
+                    <option value="Porsche">Porsche</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>모델명</label>
+                <select name="model" id="modelSelect">
+                    <option value="Model 3 Long Range">Model 3 Long Range</option>
+                    <option value="Model Y Long Range">Model Y Long Range</option>
+                    <option value="Model S">Model S</option>
+                    <option value="Model X">Model X</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>연식</label>
+                <select name="model_year">
+                    <option value="2023">2023년</option>
+                    <option value="2022" selected>2022년</option>
+                    <option value="2021">2021년</option>
+                    <option value="2020">2020년</option>
+                    <option value="2019">2019년</option>
+                    <option value="2018">2018년</option>
+                    <option value="2017">2017년</option>
+                    <option value="2016">2016년</option>
+                    <option value="2015">2015년</option>
+                    <option value="2014">2014년</option>
+                    <option value="2013">2013년</option>
+                    <option value="2012">2012년</option>
+                    <option value="2011">2011년</option>
+                    <option value="2010">2010년</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>주행거리 (km)</label>
+                <input type="number"
+                       name="mileage_km"
+                       value="48000"
+                       min="0"
+                       max="500000">
+            </div>
+
+            <div class="form-group">
+                <label>변속기</label>
+                <select name="transmission">
+                    <option value="1-Speed Automatic">1단 자동변속기 (1-Speed Automatic)</option>
+                    <option value="Automatic">자동변속기 (Automatic)</option>
+                    <option value="CVT">무단변속기 (CVT)</option>
+                    <option value="Unknown">정보 없음 (Unknown)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>구동 방식</label>
+                <select name="drivetrain">
+                    <option value="All-Wheel Drive">사륜구동 (All-Wheel Drive)</option>
+                    <option value="Rear-Wheel Drive">후륜구동 (Rear-Wheel Drive)</option>
+                    <option value="Front-Wheel Drive">전륜구동 (Front-Wheel Drive)</option>
+                    <option value="Four-Wheel Drive">4륜구동 (Four-Wheel Drive)</option>
+                    <option value="Unknown">정보 없음 (Unknown)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>사고 또는 손상 이력</label>
+                <select name="accidents_or_damage">
+                    <option value="0">없음</option>
+                    <option value="1">있음</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>1인 소유 차량</label>
+                <select name="one_owner">
+                    <option value="1">예</option>
+                    <option value="0">아니오</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>개인 사용 차량</label>
+                <select name="personal_use_only">
+                    <option value="1">예</option>
+                    <option value="0">아니오</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">
+            가격 예측하기
+        </button>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span>데이터</span>
+                <strong>16,403건</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>모델</span>
+                <strong>Random Forest</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>R²</span>
+                <strong>0.9579</strong>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+<div id="loadingOverlay" class="loading-overlay">
+    <div class="loading-box">
+        <div class="ai-circle">
+            <span>AI</span>
+        </div>
+
+        <h3>AI 분석 중...</h3>
+
+        <p id="loadingText">
+            차량 정보를 분석하고 있습니다.
+        </p>
+
+        <div class="loading-progress">
+            <div class="loading-progress-bar"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modelsByBrand = {
+        "Tesla": [
+            "Model 3 Long Range",
+            "Model Y Long Range",
+            "Model S",
+            "Model X",
+            "Model S Plaid",
+            "Model X Plaid"
+        ],
+        "Audi": [
+            "Q4 e-tron",
+            "e-tron",
+            "e-tron GT",
+            "SQ8 e-tron"
+        ],
+        "BMW": [
+            "i3",
+            "i4",
+            "iX",
+            "i7"
+        ],
+        "Mercedes-Benz": [
+            "EQS",
+            "EQE",
+            "EQB",
+            "EQC"
+        ],
+        "Ford": [
+            "Mustang Mach-E",
+            "F-150 Lightning",
+            "E-Transit"
+        ],
+        "Rivian": [
+            "R1T",
+            "R1S"
+        ],
+        "Porsche": [
+            "Taycan",
+            "Taycan Cross Turismo"
+        ],
+        "Hyundai": [
+            "IONIQ 5",
+            "IONIQ 6",
+            "Kona Electric"
+        ],
+        "Kia": [
+            "EV6",
+            "Niro EV",
+            "Soul EV"
+        ],
+        "Nissan": [
+            "Leaf",
+            "Ariya"
+        ],
+        "Volkswagen": [
+            "ID.4",
+            "ID. Buzz"
+        ],
+        "Chevrolet": [
+            "Bolt EV",
+            "Bolt EUV"
+        ]
+    };
+
+    const brandSelect = document.getElementById("brandSelect");
+    const modelSelect = document.getElementById("modelSelect");
+
+    function updateModels() {
+        const brand = brandSelect.value;
+        const models = modelsByBrand[brand] || [];
+
+        modelSelect.innerHTML = "";
+
+        models.forEach(function(model) {
+            const option = document.createElement("option");
+            option.value = model;
+            option.textContent = model;
+            modelSelect.appendChild(option);
+        });
+    }
+
+    brandSelect.addEventListener("change", updateModels);
+    updateModels();
+
+    const form = document.getElementById("predictForm");
+    const loadingOverlay = document.getElementById("loadingOverlay");
+    const loadingText = document.getElementById("loadingText");
+
+    form.addEventListener("submit", function () {
+        loadingOverlay.style.display = "flex";
+
+        const messages = [
+            "차량 정보를 분석하고 있습니다.",
+            "중고 전기차 데이터를 비교하고 있습니다.",
+            "AI 모델이 예상 가격을 계산하고 있습니다."
+        ];
+
+        let index = 0;
+
+        setInterval(function () {
+            index = (index + 1) % messages.length;
+            loadingText.innerText = messages[index];
+        }, 600);
+    });
+</script>
+
+</body>
+</html>
